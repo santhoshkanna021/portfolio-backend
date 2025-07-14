@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
-from backend.config import Config
+from config import Config  # ✅ Fixed this line
 
 app = Flask(__name__)
 app.config.from_object(Config)
